@@ -111,7 +111,13 @@ done
 EOF
 
 echo "🔄 重新載入 Finder..."
-killall Finder >/dev/null 2>&1 || true
+if killall Finder 2>/dev/null; then
+  sleep 1
+  echo "✅ Finder 已重新啟動，快速動作已激活"
+else
+  echo "⚠️  未能自動重啟 Finder，請手動重啟："
+  echo "   按住 Option，右鍵點擊 Dock 中的 Finder，選擇「重新啟動」"
+fi
 
 echo ""
 echo "🎉 安裝完成！"
