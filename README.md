@@ -76,7 +76,7 @@ bash install.sh
 
 ## 作者
 
-ImageSlim Team
+Brian Han - [GitHub](https://github.com/sacahan)
 
 ## 授權
 
