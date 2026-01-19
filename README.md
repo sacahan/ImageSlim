@@ -27,6 +27,16 @@ bash install.sh
 - macOS 系統
 - 具有 Homebrew 的寫入權限
 
+## 重啟 Finder
+
+安裝完成後，需要重啟 Finder 以使快速動作生效：
+
+```bash
+killall Finder
+```
+
+或者通過 UI：按住 `Option` 鍵，右鍵點擊 Dock 中的 Finder 圖標，選擇「重新啟動」。
+
 ## 使用方法
 
 1. 在 Finder 中選取一或多張圖片
